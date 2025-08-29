@@ -1,6 +1,18 @@
-# SimChest: a novel anomaly agnostic model for similarity measurement in follow-up chest radiograph pairs via a supervised contrastive learning model
+# Screening Patient Misidentification Errors Using a Deep Learning Model of Chest Radiography: A Seven Reader Study
 
-This is a PyTorch implementation of the LDH under reivew paper:
+This is a PyTorch implementation of the [SimChest paper](https://link.springer.com/article/10.1007/s10278-024-01245-0):
+```
+@article{kim2025screening,
+  title={Screening Patient Misidentification Errors Using a Deep Learning Model of Chest Radiography: A Seven Reader Study},
+  author={Kim, Kiduk and Cho, Kyungjin and Eo, Yujeong and Kim, Jeeyoung and Yun, Jihye and Ahn, Yura and Seo, Joon Beom and Hong, Gil-Sun and Kim, Namkug},
+  journal={Journal of Imaging Informatics in Medicine},
+  volume={38},
+  number={2},
+  pages={694--702},
+  year={2025},
+  publisher={Springer}
+}
+```
 
 ## Pretraining task procedure
 
@@ -15,6 +27,14 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python main_supcon.py --dataset real --name SupCon_
 --print_freq=5 --save_freq 1 --num_workers 8 --aug True --warm \
 --batch_size 8 --model resnet50 --method SupCon --epochs 100
 
+```
+
+## Pretrained model weight
+[Google Drive](https://drive.google.com/uc?id=1I8IgZ6mjPwvCPDk0EutkYH6UYOY865_n&export=download)
+or you can use gdown in Python
+
+```python
+!gdown https://drive.google.com/uc?id=1I8IgZ6mjPwvCPDk0EutkYH6UYOY865_n
 ```
 
 ## Model inference
@@ -39,7 +59,7 @@ python model_inference.py
 
 Page: [https://mi2rl.co](https://mi2rl.co/)
 
-Email: [kjcho](mailto:kjcho@amc.seoul.kr).amc@gmail.com
+Email: kiduk.amc@gmail.com
 
 
 ## Reference
