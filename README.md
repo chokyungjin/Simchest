@@ -1,6 +1,6 @@
-# SimChest: a novel anomaly agnostic model for similarity measurement in follow-up chest radiograph pairs via a supervised contrastive learning model
+# Screening Patient Misidentification Errors Using a Deep Learning Model of Chest Radiography: A Seven Reader Study
 
-This is a PyTorch implementation of the [SimChest paper]((https://link.springer.com/article/10.1007/s10278-024-01245-0)):
+This is a PyTorch implementation of the [SimChest paper](https://link.springer.com/article/10.1007/s10278-024-01245-0):
 ```
 @article{kim2025screening,
   title={Screening Patient Misidentification Errors Using a Deep Learning Model of Chest Radiography: A Seven Reader Study},
